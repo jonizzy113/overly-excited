@@ -63,21 +63,21 @@
 
 let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon", ];
 
-function addExcitement(theWordArray) {
+function addExcitement(theWordArray, punct) {
     let buildMeUp = ""
 
 
 
     for (let i = 0; i < theWordArray.length; i++) {
 
-            buildMeUp += theWordArray[i]
+            buildMeUp += theWordArray[i] + punct + " "
 
             if((i + 1) % 3 === 0) {
-                buildMeUp += "?"
-            
+                
+        
             
             }
-                buildMeUp += " "
+                
     
                 
         console.log(buildMeUp)
